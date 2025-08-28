@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>CalmMind</title>
+  <!----------------------------TAILWIND CDN---------------------------------->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Montserrat"', 'sans-serif'],
+          },
+          colors: {
+            calm: '#A5D8FF',
+            orange: '#E85002',
+            dark: '#000000',
+            dark_gray: '#0F1516',
+            white: '#CECCCC',
+            start: '#000000',
+            mid: '#090F15',
+            end: '#000000'
+          },
+        },
+      },
+    };
+  </script>
+  <!----------------MONTSERATT FONT------------------->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!----------------------------BOXICON ICONS ---------------------------------->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!--------------------------- SWIPER STYLES ----------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+<!----------------------------- SWIPER SCRIPT ----------------------------------->
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!------------------------------- AOS CSS ------------------------------------------>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+</head>
+
+<body class="bg-mid font-sans bg-gradient-to-tr from-start to-mid">
+
+
+
+  <!-- Navbar -->
+  <nav class=" backdrop-blur-md text-white px-6 py-4 flex justify-between items-center fixed top-0 w-full z-50">
+    <div class="flex items-center space-x-2 fade-in opacity-0 motion-safe:transition-opacity motion-safe:duration-700">
+  <img src="design elements/logoc.png" alt="Credo Logo" class="w-8 h-8 opacity-900">
+  <span class="text-2xl font-light mt-1">CalmMind</span>
+</div>
+    <ul class="hidden md:flex gap-14 text-sm">
+      
+      <li><a href="#" class="hover:text-orange transition, fade-in opacity-0 motion-safe:transition-opacity motion-safe:duration-700">Home</a></li>
+      <li><a href="#" class="hover:text-orange transition, fade-in opacity-0 motion-safe:transition-opacity motion-safe:duration-700">About</a></li>
+      <li><a href="#" class="hover:text-orange transition, fade-in opacity-0 motion-safe:transition-opacity motion-safe:duration-700">Meditations</a></li>
+      <li><a href="#" class="hover:text-orange transition, fade-in opacity-0 motion-safe:transition-opacity motion-safe:duration-700">Tips</a></li>
+      <li><a href="#" class="hover:text-orange transition, fade-in opacity-0 motion-safe:transition-opacity motion-safe:duration-700">Contact</a></li>
+    </ul>
+    <i class='bx bx-menu text-3xl text-white hover:text-orange cursor-pointer'></i>
+  </nav>
+
+  <!-- Main Section -->
+   
+  <div class="flex items-center ml-32 px-4 min-h-screen text-left">
+    <div class="max-w-xl mt-24 md:mt-0">
+      <h1 data-aos="fade-right" data-aos-delay="700" class="text-2xl md:text-4xl font-light mb-4 text-white">
+        Find your calm. Breathe. Be present.
+      </h1>
+      <p data-aos="fade-right" data-aos-delay="800" class="text-base md:text-sm mb-8 text-white">
+        Free guided meditations and mindfulness tools for daily balance.
+      </p>
+      <div data-aos="fade-right" data-aos-delay="900" class="flex flex-col text-sm sm:flex-row gap-3">
+        <a href="#" class="px-4 py-2 font-sans bg-orange text-white rounded-full shadow hover:bg-orange/90 transition">
+          GET STARTED
+        </a>
+      </div>
+    </div>
+  <div class="relative w-full h-screen flex  mt-10">
+  <!-- Bottom image (orange) -->
+ <div class="w-[700%] h-auto">
+  <img src="design elements/orange.png" 
+       alt="Orange Image" 
+       class="w-full h-auto">
+</div>
+
+
+  <!-- Top image (hero) -->
+  <img data-aos="fade-left" data-aos-delay="900" 
+       src="design elements/bgimg.png" 
+       alt="Hero Image" 
+       class="absolute inset-0 m-auto mr-1 max-w-[100%] max-h-full object-contain">
+</div>
+  </div>
+
+    <!-- ABOUT SECTION -->
+  <section id="about" class="text-white py-20 px-6">
+    <div data-aos="fade-up" class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-semibold mb-7">About Us</h2>
+      <p class="text-sm md:text-sm leading-relaxed">
+        CalmMind is your sanctuary for mental clarity and emotional balance.
+        Our goal is to guide you through free, easy-to-access meditation sessions
+        that help reduce stress, increase mindfulness, and bring peace to your everyday life.
+      </p>
+      <p class="mt-6 text-base md:text-sm">
+        Whether you're new to meditation or an experienced practitioner, our platform
+        offers something for everyone — calming audio, expert tips, and inspiration to keep
+        your practice alive and consistent.
+      </p>
+    </div>
+
+    <div class="py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <!-- Heading -->
+    <div data-aos="fade-up" data-aos-delay="700" class="text-center mb-10">
+      <h2 class="text-2xl md:text-2xl font-semibold text-white">
+        What our clients think about CalmMind
+      </h2>
+      <p class="text-sm text-gray-500 mt-2">⭐ 4.8 · 546 reviews</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      
+      <!-- Card 1 (Image with Overlay Text) -->
+      <div data-aos="fade-up" data-aos-delay="300"  class="relative md:col-span-2 row-span-2 rounded-xl overflow-hidden">
+        <img src="design elements/aaron.png"
+             alt="Client"
+             class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div class="absolute bottom-4 left-4 text-white">
+          <span class="text-xs uppercase tracking-wide">Customer Stories</span>
+          <p class="text-xl font-semibold mt-2">“I use CalmMind to relax and focus.”</p>
+          <p class="text-sm mt-1">— Aaron Creed, Student</p>
+        </div>
+      </div>
+
+      <!-- Card 2 (Solid Color with Stats) -->
+      <div data-aos="fade-up" data-aos-delay="400"  class=" bg-orange text-white p-6 rounded-xl flex flex-col justify-center">
+        <p class="text-5xl font-bold">89%</p>
+        <p class="mt-2 text-lg">of customers recommend CalmMind</p>
+      </div>
+
+      <!-- Card 3 (Image with Text Overlay) -->
+      <div data-aos="fade-up" data-aos-delay="500"   class="relative rounded-xl overflow-hidden">
+        <img src="design elements/ahndrei.png"
+             alt="Team"
+             class="w-full h-60 object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div class="absolute bottom-3 left-3 text-white">
+          <span class="text-xs uppercase">Customer Stories</span>
+          <p class="text-md font-semibold">How CalmMind helped boost productivity</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div data-aos="fade-up" data-aos-delay="600"  class="bg-white p-6 rounded-xl shadow">
+        <p class="text-lg font-medium text-gray-900">
+          “'Di pa 'to deployed pero feeling ko maangas 'to kaya highly recommended.”
+        </p>
+        <p class="text-sm text-gray-500 mt-4">— Anonymous</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div data-aos="fade-up" data-aos-delay="700"  class="bg-dark_gray p-6 rounded-xl shadow">
+        <p class="text-lg font-medium text-white">
+          “Malupit 'to man! Highly recommended CalmMind para sa mga stressed sa buhay.”
+        </p>
+        <p class="text-sm text-gray-500 mt-4">— Cedric Navarossa</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </section>
+
+  
+
+
+  <!-- MEDITATIONS SECTION -->
+<section data-aos="fade-up" id="meditations" class="text-white py-20 px-6">
+  <!-- Dynamic Background -->
+<div id="bg-blur"
+     class="fixed inset-0 -z-10 bg-center bg-cover blur-2xl opacity-70 transition-all duration-700">
+</div>
+
+<div class="fixed inset-0 -z-10">
+  <div id="bg-blur" class="absolute inset-0 bg-center bg-cover blur-2xl opacity-60"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/80"></div>
+</div>
+
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-5">Meditations</h2>
+    <p class="text-lg md:text-sm font-light mb-12">
+      Explore our guided sessions to reduce stress, improve sleep, and boost mindfulness.
+    </p>
+
+    <!-- Swiper -->
+    <div class="relative swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-------------------------- Slide 1 -------------------------------->
+<div class="swiper-slide">
+  <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
+    <!-- Image -->
+    <img src="design elements/emotions.jpg" class="w-full h-full object-cover" />
+
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
+
+    <!-- Default Content -->
+    <div class="default-content absolute bottom-4 left-4 text-white">
+      <h3 class="text-xl font-semibold text-left">Emotional Regulation</h3>
+      <p class="text-xs text-left">Calming down strong emotions like anger, fear, or sadness.</p>
+      <button class="listen-btn text-orange flex items-center font-medium hover:underline mt-2">Listen Now</button>
+    </div>
+
+    <!-- Expanded Content -->
+    <div class="expanded-content p-6 text-sans absolute inset-0 bg-black/90 text-white hidden rounded-2xl">
+      <button class="close-btn absolute top-4 right-4 text-white text-md hover:text-orange">✕</button>
+      <h3 class="text-xl font-medium mt-10 mb-6">Emotional Regulation</h3>
+      <ul class="space-y-3 text-sm pb-6">
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 1: Calming Anger</li>
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 2: Overcoming Fear</li>
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer ">Session 3: Easing Sadness</li>
+      </ul>
+      <button class="bg-orange px-4 py-2 rounded-full text-md font-md shadow-lg hover:bg-orange/700 transition mb-6">
+        ▶ Start
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+        <!-- Slide 2 -->
+        <!-- Slide with Image + Stronger Gradient -->
+<div class="swiper-slide">
+
+  <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
+    
+
+    <img src="design elements/sleep.png" alt="Sleep" class="w-full h-full object-cover" />
+
+
+    <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
+
+  
+    <div class="default-content absolute bottom-4 left-4 text-white">
+      <h3 class="text-xl font-semibold text-left">Sleep</h3>
+      <p class="text-xs text-left">Calming the mind and body to ease into deep, restful sleep.</p>
+
+  
+      <button class="listen-btn text-orange flex items-center font-medium hover:underline mt-2">Listen Now</button>
+    </div>
+
+    <div class="expanded-content p-6 text-sans absolute inset-0 bg-black/90 text-white hidden rounded-2xl">
+
+      <button class="close-btn absolute top-4 right-4 text-white text-md hover:text-orange">✕</button>
+      
+      
+      <!-- expanded content -->
+      <h3 class="text-xl font-medium mt-10 mb-6">Sleep Sessions</h3>
+      <ul class="space-y-3 text-sm pb-6">
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 1: Deep Breathing</li>
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 2: Relaxing Body Scan</li>
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 3: Nighttime Gratitude</li>
+      </ul>
+
+      <!-- Start button -->
+      <button class="bg-orange px-4 py-2 rounded-full text-md font-md shadow-lg hover:bg-orange/700 transition mb-6">
+        ▶ Start
+      </button>
+    </div>
+  </div>
+</div>
+
+
+       <!-- Slide 3 -->
+<div class="swiper-slide">
+
+  <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
+    
+    <!-- Image -->
+    <img src="design elements/productivity.png" alt="Productivity" class="w-full h-full object-cover" />
+
+    <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
+
+    <!-- default-content -->
+    <div class="default-content absolute bottom-4 left-4 text-white">
+      <h3 class="text-xl font-semibold text-left">Productivity</h3>
+      <p class="text-xs text-left">Sharpening focus and sustaining energy to get tasks done efficiently.</p>
+
+
+      <button class="listen-btn text-orange flex items-center font-medium hover:underline mt-2">Listen Now</button>
+    </div>
+
+    <div class="expanded-content p-6 text-sans absolute inset-0 bg-black/90 text-white hidden rounded-2xl">
+
+      <button class="close-btn absolute top-4 right-4 text-white text-md hover:text-orange">✕</button>
+      
+
+      <h3 class="text-xl font-medium mt-10 mb-6">Productivity Sessions</h3>
+      <ul class="space-y-3 text-sm pb-6">
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 1: Morning Focus</li>
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 2: Beating Procrastination</li>
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 3: Sustaining Energy</li>
+      </ul>
+
+      <button class="bg-orange px-4 py-2 rounded-full text-md font-md shadow-lg hover:bg-orange/700 transition mb-6">
+        ▶ Start
+      </button>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Slide 4 -->
+<div class="swiper-slide">
+
+  <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
+    
+
+    <img src="design elements/body.jpg" alt="Body Awareness" class="w-full h-full object-cover" />
+
+    <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
+
+
+    <div class="default-content absolute bottom-4 left-4 text-white">
+      <h3 class="text-xl font-semibold text-left">Body Awareness</h3>
+      <p class="text-xs text-left">Tuning in to physical sensations, posture, or breath.</p>
+
+      <button class="listen-btn text-orange flex items-center font-medium hover:underline">Listen Now</button>
+    </div>
+
+  
+    <div class="expanded-content p-6 text-sans absolute inset-0 bg-black/90 text-white hidden rounded-2xl">
+      <button class="close-btn absolute top-4 right-4 text-white text-md hover:text-orange">✕</button>
+      
+      <h3 class="text-xl font-medium mt-10 mb-6">Body Awareness Sessions</h3>
+      <ul class="space-y-3 text-sm pb-6">
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 1: Full Body Scan</li>
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 2: Relaxing Posture</li>
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 3: Breath and Movement</li>
+      </ul>
+
+
+      <button class="bg-orange px-4 py-2 rounded-full text-md font-md shadow-lg hover:bg-orange/700 transition mb-6">
+        ▶ Start
+      </button>
+    </div>
+  </div>
+</div>
+
+
+       <!-- Slide 5 -->
+<div class="swiper-slide">
+
+  <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
+    
+
+    <img src="design elements/nature.jpg" alt="Nature Calm" class="w-full h-full object-cover" />
+
+
+    <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
+
+
+    <div class="default-content absolute bottom-4 left-4 text-white">
+      <h3 class="text-xl font-semibold text-left">Nature Calm</h3>
+      <p class="text-xs text-left">Relax with the sound of waterfalls.</p>
+
+      <button class="listen-btn text-orange flex items-center font-medium hover:underline mt-2">Listen Now</button>
+    </div>
+
+
+    <div class="expanded-content p-6 text-sans absolute inset-0 bg-black/90 text-white hidden rounded-2xl">
+      <button class="close-btn absolute top-4 right-4 text-white text-md hover:text-orange">✕</button>
+      
+      <h3 class="text-xl font-medium mt-10 mb-6">Nature Calm Sessions</h3>
+      <ul class="space-y-3 text-sm pb-6">
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 1: Forest Walk</li>
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 2: Ocean Waves</li>
+        <li class="p-3 bg-black-800 rounded-lg hover:bg-gray-700 cursor-pointer">Session 3: Waterfall Relaxation</li>
+      </ul>
+
+
+      <button class="bg-orange px-4 py-2 rounded-full text-md font-md shadow-lg hover:bg-orange/700 transition mb-6">
+        ▶ Start
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+      </div>
+
+
+<!-- Navigation Buttons -->
+
+<style>
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: '';
+  }
+</style>
+
+<!-- Navigation Buttons -->
+<div class="swiper-button-prev !left-2 z-10 !w-8 !h-8 !rounded-full !bg-gray-600/60 
+            hover:!bg-gray-500/80 transition duration-200"></div>
+
+<div class="swiper-button-next !right-2 z-10 !w-8 !h-8 !rounded-full !bg-gray-600/60 
+            hover:!bg-gray-500/80 transition duration-200"></div>
+
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* define custom class manually */
+  .card.expanded {
+    width: 100%;
+    height: 28rem;
+  }
+
+  @media (min-width: 768px) { /* md: */
+    .card.expanded {
+      width: 30rem;
+      height: 22rem;
+    }
+  }
+
+  @media (min-width: 1024px) { /* lg: */
+    .card.expanded {
+      width: 40rem;
+      height: 25rem;
+    }
+  }
+</style>
+
+
+<!---------------------------JAVASCRIPT LIBRARIESSS-->
+<script>document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  });
+
+  // Background changer
+  const bg = document.getElementById("bg-blur");
+
+  function updateBackground() {
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    const img = activeSlide.querySelector("img");
+    if (img) {
+      bg.style.backgroundImage = `url('${img.src}')`;
+    }
+  }
+
+  // Run once and also on every slide change
+  updateBackground();
+  swiper.on("slideChange", updateBackground);
+});
+
+</script>
+
+<!-----------------ANIMATEEE ON SCROOOLLL--------------------------->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Find all elements marked to fade in
+    const items = document.querySelectorAll(".fade-in");
+    items.forEach((el, i) => {
+      // Optional stagger (150ms between items). Remove if not needed.
+      el.style.transitionDelay = (i * 150) + "ms";
+      // Trigger the fade
+      el.classList.add("opacity-100");
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    AOS.init({
+      duration: 800,   // animation speed in ms
+      offset: 80,      // how far from the bottom before triggering
+      easing: "ease",  // animation curve
+      once: true       // animate only once (no repeat on scroll back)
+    });
+  });
+</script>
+
+<!---------------expanded contents-->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    const listenBtn = card.querySelector(".listen-btn");
+    const defaultContent = card.querySelector(".default-content");
+    const expandedContent = card.querySelector(".expanded-content");
+    const closeBtn = card.querySelector(".close-btn");
+
+    listenBtn.addEventListener("click", () => {
+  defaultContent.classList.add("hidden");
+  expandedContent.classList.remove("hidden");
+  card.classList.add("expanded");   // ✅ just one toggle
+});
+
+closeBtn.addEventListener("click", () => {
+  defaultContent.classList.remove("hidden");
+  expandedContent.classList.add("hidden");
+  card.classList.remove("expanded");
+});
+  });
+});
+</script>
+
+
+
+</body>
+</html>
