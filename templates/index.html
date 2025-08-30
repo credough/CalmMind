@@ -52,7 +52,7 @@
   <!-- Navbar -->
   <nav class=" backdrop-blur-md text-white px-6 py-4 flex justify-between items-center fixed top-0 w-full z-50">
     <div class="flex items-center space-x-2 fade-in opacity-0 motion-safe:transition-opacity motion-safe:duration-700">
-  <img src="../static/design elements/logoc.png" alt="Credo Logo" class="w-8 h-8 opacity-900">
+  <img src="{{ url_for('static', filename='../static/design elements/logoc.png') }}" alt="Credo Logo" class="w-8 h-8 opacity-900">
   <span class="text-2xl font-light mt-1">CalmMind</span>
 </div>
     <ul class="hidden md:flex gap-14 text-sm">
@@ -85,7 +85,7 @@
   <div class="relative w-full h-screen flex  mt-10">
   <!-- Bottom image (orange) -->
  <div class="w-[700%] h-auto">
-  <img src="../static/design elements/orange.png" 
+  <img src="{{ url_for('static', filename='../static/design elements/orange.png') }}" 
        alt="Orange Image" 
        class="w-full h-auto">
 </div>
@@ -93,7 +93,7 @@
 
   <!-- Top image (hero) -->
   <img data-aos="fade-left" data-aos-delay="900" 
-       src="../static/design elements/bgimg.png" 
+       src="{{ url_for('static', filename='../static/design elements/bgimg.png') }}" 
        alt="Hero Image" 
        class="absolute inset-0 m-auto mr-1 max-w-[100%] max-h-full object-contain">
 </div>
@@ -130,7 +130,7 @@
       
       <!-- Card 1 (Image with Overlay Text) -->
       <div data-aos="fade-up" data-aos-delay="300"  class="relative md:col-span-2 row-span-2 rounded-xl overflow-hidden">
-        <img src="../static/design elements/aaron.png"
+        <img src="{{ url_for('static', filename='../static/design elements/aaron.png') }}" 
              alt="Client"
              class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
@@ -149,7 +149,7 @@
 
       <!-- Card 3 (Image with Text Overlay) -->
       <div data-aos="fade-up" data-aos-delay="500"   class="relative rounded-xl overflow-hidden">
-        <img src="../static/design elements/ahndrei.png"
+        <img src="{{ url_for('static', filename='../static/design elements/ahndrei.png') }}" 
              alt="Team"
              class="w-full h-60 object-cover" />
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
@@ -209,7 +209,7 @@
 <div class="swiper-slide">
   <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
     <!-- Image -->
-    <img src="../static/design elements/emotions.jpg" class="w-full h-full object-cover" />
+    <img src="{{ url_for('static', filename='../static/design elements/emotions.jpg') }}"  class="w-full h-full object-cover" />
 
     <!-- Gradient Overlay -->
     <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
@@ -247,7 +247,7 @@
   <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
     
 
-    <img src="../static/design elements/sleep.png" alt="Sleep" class="w-full h-full object-cover" />
+    <img src="{{ url_for('static', filename='../static/design elements/sleep.png') }}"  alt="Sleep" class="w-full h-full object-cover" />
 
 
     <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
@@ -289,7 +289,7 @@
   <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
     
     <!-- Image -->
-    <img src="../static/design elements/productivity.png" alt="Productivity" class="w-full h-full object-cover" />
+    <img src="{{ url_for('static', filename='../static/design elements/productivity.png') }}"  alt="Productivity" class="w-full h-full object-cover" />
 
     <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
 
@@ -328,7 +328,7 @@
   <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
     
 
-    <img src="../static/design elements/body.jpg" alt="Body Awareness" class="w-full h-full object-cover" />
+    <img src="{{ url_for('static', filename='../static/design elements/body.jpg') }}"  alt="Body Awareness" class="w-full h-full object-cover" />
 
     <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
 
@@ -366,7 +366,7 @@
   <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
     
 
-    <img src="../static/design elements/nature.jpg" alt="Nature Calm" class="w-full h-full object-cover" />
+    <img src="{{ url_for('static', filename='../static/design elements/nature.jpg') }}" alt="Nature Calm" class="w-full h-full object-cover" />
 
 
     <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
