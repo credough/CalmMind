@@ -1,6 +1,10 @@
 # AARON PRIVATE MO NGA MUNA TONG REPO SAKA NA IPUBLIC PAGTAPOS NA HAHAHAHAHAH
-## To setup the environment
 
+## Updates
+- sinimplify ko yung mga folders ng frontend
+- sineperate ko all the scripts to one single .js file (main.js)
+  
+## To setup the environment
 ```
 python -m venv venv
 source venv/bin/activate # Only for linux/macOS
