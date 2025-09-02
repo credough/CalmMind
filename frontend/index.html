@@ -28,19 +28,19 @@
       },
     };
   </script>
-  <!----------------MONTSERATT FONT------------------->
+  <!----------------montserrat------------------->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!----------------------------BOXICON ICONS ---------------------------------->
+  <!----------------------------boxicon cdn ---------------------------------->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   
-  <!--------------------------- SWIPER STYLES ----------------------------------->
+  <!--------------------------- swiper ----------------------------------->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
 <!----------------------------- SWIPER SCRIPT ----------------------------------->
 <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-<!------------------------------- AOS CSS ------------------------------------------>
+<!------------------------------- aos CSS ------------------------------------------>
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 </head>
@@ -52,7 +52,7 @@
   <!-- Navbar -->
   <nav class=" backdrop-blur-md text-white px-6 py-4 flex justify-between items-center fixed top-0 w-full z-50">
     <div class="flex items-center space-x-2 fade-in opacity-0 motion-safe:transition-opacity motion-safe:duration-700">
-  <img src="{{ url_for('static', filename='../static/design elements/logoc.png') }}" alt="Credo Logo" class="w-8 h-8 opacity-900">
+  <img src="design elements/logoc.png" alt="Credo Logo" class="w-8 h-8 opacity-900">
   <span class="text-2xl font-light mt-1">CalmMind</span>
 </div>
     <ul class="hidden md:flex gap-14 text-sm">
@@ -85,7 +85,7 @@
   <div class="relative w-full h-screen flex  mt-10">
   <!-- Bottom image (orange) -->
  <div class="w-[700%] h-auto">
-  <img src="{{ url_for('static', filename='../static/design elements/orange.png') }}" 
+  <img src="design elements/orange.png" 
        alt="Orange Image" 
        class="w-full h-auto">
 </div>
@@ -93,7 +93,7 @@
 
   <!-- Top image (hero) -->
   <img data-aos="fade-left" data-aos-delay="900" 
-       src="{{ url_for('static', filename='../static/design elements/bgimg.png') }}" 
+       src="design elements/bgimg.png" 
        alt="Hero Image" 
        class="absolute inset-0 m-auto mr-1 max-w-[100%] max-h-full object-contain">
 </div>
@@ -130,7 +130,7 @@
       
       <!-- Card 1 (Image with Overlay Text) -->
       <div data-aos="fade-up" data-aos-delay="300"  class="relative md:col-span-2 row-span-2 rounded-xl overflow-hidden">
-        <img src="{{ url_for('static', filename='../static/design elements/aaron.png') }}" 
+        <img src="design elements/aaron.png" 
              alt="Client"
              class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
@@ -149,7 +149,7 @@
 
       <!-- Card 3 (Image with Text Overlay) -->
       <div data-aos="fade-up" data-aos-delay="500"   class="relative rounded-xl overflow-hidden">
-        <img src="{{ url_for('static', filename='../static/design elements/ahndrei.png') }}" 
+        <img src="design elements/ahndrei.png" 
              alt="Team"
              class="w-full h-60 object-cover" />
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
@@ -209,7 +209,7 @@
 <div class="swiper-slide">
   <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
     <!-- Image -->
-    <img src="{{ url_for('static', filename='../static/design elements/emotions.jpg') }}"  class="w-full h-full object-cover" />
+    <img src="design elements/emotions.jpg"  class="w-full h-full object-cover" />
 
     <!-- Gradient Overlay -->
     <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
@@ -247,7 +247,7 @@
   <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
     
 
-    <img src="{{ url_for('static', filename='../static/design elements/sleep.png') }}"  alt="Sleep" class="w-full h-full object-cover" />
+    <img src="design elements/sleep.png"  alt="Sleep" class="w-full h-full object-cover" />
 
 
     <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
@@ -289,7 +289,7 @@
   <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
     
     <!-- Image -->
-    <img src="{{ url_for('static', filename='../static/design elements/productivity.png') }}"  alt="Productivity" class="w-full h-full object-cover" />
+    <img src="design elements/productivity.png"  alt="Productivity" class="w-full h-full object-cover" />
 
     <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
 
@@ -328,7 +328,7 @@
   <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
     
 
-    <img src="{{ url_for('static', filename='../static/design elements/body.jpg') }}"  alt="Body Awareness" class="w-full h-full object-cover" />
+    <img src="design elements/body.jpg"  alt="Body Awareness" class="w-full h-full object-cover" />
 
     <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
 
@@ -366,7 +366,7 @@
   <div class="card relative w-72 h-96 rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-500">
     
 
-    <img src="{{ url_for('static', filename='../static/design elements/nature.jpg') }}" alt="Nature Calm" class="w-full h-full object-cover" />
+    <img src="design elements/nature.jpg" alt="Nature Calm" class="w-full h-full object-cover" />
 
 
     <div class="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-black/100 to-transparent"></div>
@@ -449,92 +449,9 @@
 
 
 <!---------------------------JAVASCRIPT LIBRARIESSS-->
-<script>document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    centeredSlides: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    }
-  });
-
-  // Background changer
-  const bg = document.getElementById("bg-blur");
-
-  function updateBackground() {
-    const activeSlide = swiper.slides[swiper.activeIndex];
-    const img = activeSlide.querySelector("img");
-    if (img) {
-      bg.style.backgroundImage = `url('${img.src}')`;
-    }
-  }
-
-  // Run once and also on every slide change
-  updateBackground();
-  swiper.on("slideChange", updateBackground);
-});
-
-</script>
-
-<!-----------------ANIMATEEE ON SCROOOLLL--------------------------->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    // Find all elements marked to fade in
-    const items = document.querySelectorAll(".fade-in");
-    items.forEach((el, i) => {
-      // Optional stagger (150ms between items). Remove if not needed.
-      el.style.transitionDelay = (i * 150) + "ms";
-      // Trigger the fade
-      el.classList.add("opacity-100");
-    });
-  });
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    AOS.init({
-      duration: 800,   // animation speed in ms
-      offset: 80,      // how far from the bottom before triggering
-      easing: "ease",  // animation curve
-      once: true       // animate only once (no repeat on scroll back)
-    });
-  });
-</script>
-
-<!---------------expanded contents-->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".card");
-
-  cards.forEach(card => {
-    const listenBtn = card.querySelector(".listen-btn");
-    const defaultContent = card.querySelector(".default-content");
-    const expandedContent = card.querySelector(".expanded-content");
-    const closeBtn = card.querySelector(".close-btn");
-
-    listenBtn.addEventListener("click", () => {
-  defaultContent.classList.add("hidden");
-  expandedContent.classList.remove("hidden");
-  card.classList.add("expanded");   // ✅ just one toggle
-});
-
-closeBtn.addEventListener("click", () => {
-  defaultContent.classList.remove("hidden");
-  expandedContent.classList.add("hidden");
-  card.classList.remove("expanded");
-});
-  });
-});
-</script>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script defer src="main.js"></script>
 
 
 
