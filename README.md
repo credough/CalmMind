@@ -1,6 +1,6 @@
 # AARON PRIVATE MO NGA MUNA TONG REPO SAKA NA IPUBLIC PAGTAPOS NA HAHAHAHAHAH
 
-## Updates
+## Updates pre
 - sinimplify ko yung mga folders ng frontend
 - sineperate ko all the scripts to one single .js file (main.js)
   
